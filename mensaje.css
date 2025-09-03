@@ -1,0 +1,81 @@
+/* 🎨 Fondo general */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #CCBCAF;
+    color: #3E2C2C;
+    line-height: 1.7;
+}
+
+/* 📌 Menú */
+header {
+    background: #4E4C35;
+    padding: 12px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    font-family: "Segoe UI Symbol", "Arial", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #FFD2D2;
+}
+
+/* 💌 Caja de la carta */
+.carta {
+    background: #fff8f2;
+    max-width: 750px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+/* Título */
+.carta h1 {
+    text-align: center;
+    color: #A64E4E;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* Párrafos */
+.carta p {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+}
+
+/* Firma */
+.carta .firma {
+    text-align: right;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 600px) {
+    .carta {
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+
+    .carta h1 {
+        font-size: 1.5rem;
+    }
+
+    .carta p {
+        font-size: 1rem;
+    }
+}

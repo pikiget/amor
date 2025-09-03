@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: linear-gradient(180deg, #E3CBB4, #CCBCAF);
+    color: #3E2C2C;
+    line-height: 1.7;
+}
+
+/* 📌 Menú */
+header {
+    background: #4E4C35;
+    padding: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    font-family: "Segoe UI", sans-serif;
+    text-decoration: none;
+    color: #F5F7EC;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #FFD2D2;
+    text-shadow: 0 0 6px #FFD2D2;
+}
+
+/* 📦 Cuadro de canción */
+#cuadro {
+    margin: 2rem auto;
+    width: 70%;
+    border-radius: 12px;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 12px rgba(117, 113, 78, 0.6),
+                inset 0 0 8px rgba(117, 113, 78, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#cuadro:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 16px rgba(139, 94, 90, 0.7);
+}
+
+/* 📸 Imagen */
+#imagen {
+    border-radius: 12px;
+    width: 13rem;
+    height: 13rem;
+    background: url("cancion1.png") center/cover no-repeat;
+    box-shadow: 0 0 10px #8B5E5A, 0 0 20px #8B5E5A, inset 0 0 10px #75714E;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+#imagen2 {
+    border-radius: 12px;
+    width: 13rem;
+    height: 13rem;
+    background: url("cacion2.jpg") center/cover no-repeat;
+    box-shadow: 0 0 10px #8B5E5A, 0 0 20px #8B5E5A, inset 0 0 10px #75714E;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+#imagen3 {
+    border-radius: 12px;
+    width: 13rem;
+    height: 13rem;
+    background: url("cancion3.png") center/cover no-repeat;
+    box-shadow: 0 0 10px #8B5E5A, 0 0 20px #8B5E5A, inset 0 0 10px #75714E;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+#imagen4 {
+    border-radius: 12px;
+    width: 13rem;
+    height: 13rem;
+    background: url("cancion4.jpg") center/cover no-repeat;
+    box-shadow: 0 0 10px #8B5E5A, 0 0 20px #8B5E5A, inset 0 0 10px #75714E;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+#imagen5 {
+    border-radius: 12px;
+    width: 13rem;
+    height: 13rem;
+    background: url("cancion5.jpg") center/cover no-repeat;
+    box-shadow: 0 0 10px #8B5E5A, 0 0 20px #8B5E5A, inset 0 0 10px #75714E;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+#imagen6 {
+    border-radius: 12px;
+    width: 13rem;
+    height: 13rem;
+    background: url("cancion6.jpg") center/cover no-repeat;
+    box-shadow: 0 0 10px #8B5E5A, 0 0 20px #8B5E5A, inset 0 0 10px #75714E;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+#imagen:hover {
+    transform: scale(1.05);
+}
+
+#imagen2:hover {
+    transform: scale(1.05);
+}
+
+#imagen3:hover {
+    transform: scale(1.05);
+}
+
+#imagen4:hover {
+    transform: scale(1.05);
+}
+
+#imagen5:hover {
+    transform: scale(1.05);
+}
+
+#imagen6:hover {
+    transform: scale(1.05);
+}
+/* 📝 Texto */
+#texto {
+    flex: 1;
+    padding: 0.5rem;
+    color: #4E4C35;
+}
+
+#texto h2 {
+    text-align: center;
+    color: #8B5E5A;
+    margin-top: 0;
+    text-shadow: 0 0 6px #F5F7EC;
+}
+
+#texto p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+    text-align: justify;
+}
+
+/* 📱 Responsive para móviles */
+@media (max-width: 768px) {
+    #cuadro {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #imagen {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #texto {
+        padding: 0.8rem 0;
+    }
+}

@@ -1,0 +1,97 @@
+/* 🎨 Fondo general */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #CCBCAF;
+    color: #3E2C2C;
+    line-height: 1.7;
+}
+
+/* 📌 Menú */
+header {
+    background: #4E4C35;
+    padding: 12px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    font-family: "Segoe UI Symbol", "Arial", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #FFD2D2;
+}
+
+/* 💌 Caja de la carta */
+.carta {
+    background: #fff8f2;
+    max-width: 750px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+/* Título */
+.carta h1 {
+    text-align: center;
+    color: #A64E4E;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* 📌 Contenedor botones */
+#botones {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* 🔘 Botones estilo romántico */
+#botones button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Segoe UI", sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ❤️ Botón "Perdón mi amor" */
+#botones button:first-child {
+    background: linear-gradient(135deg, #FFB6B6, #FF8C8C);
+    color: #fff;
+}
+
+#botones button:first-child:hover {
+    background: linear-gradient(135deg, #FF8C8C, #FF6B6B);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 108, 108, 0.5);
+}
+
+/* 😒 Botón "Porque quiero" */
+#botones button:last-child {
+    background: linear-gradient(135deg, #D1CFC1, #A6A493);
+    color: #3E2C2C;
+}
+
+#botones button:last-child:hover {
+    background: linear-gradient(135deg, #A6A493, #8C8A75);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(117, 113, 78, 0.5);
+}
